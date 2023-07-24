@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./img/weather-news_648198.png">
+    <title>Weather Forecast Website</title>
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+            <h1>Weather Forecast</h1>
+            <form class="formInput">
+                <input type="text" id="inputLocation" placeholder="Enter your city name">
+                <button class="btn" onclick="getWeather(event)">Get Weather</button>
+            </form>
+            <div id="currentInformation">
+                <h2 class="text-infor">Current weather information will be displayed here</h2>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
