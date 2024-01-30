@@ -11,7 +11,7 @@ function getWeather(event) {
         return;
     }
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=4748ad73168954570cc61e80ddedc558`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid={YOUR_API_KEY}`)
         .then ((response) => {
             if (!response.ok) throw new Error("Network response is not ok")
             return response.json();
